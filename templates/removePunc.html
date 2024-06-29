@@ -1,0 +1,19 @@
+
+
+<form action="/removePunc" method="post">
+    {% csrf_token %}
+    <textarea style="width: 70%;" name="text" rows="4"></textarea>
+    <br>
+    <button type="submit">Analayse</button>
+    <button type="button"><a href="/">Back</a></button>
+</form>
+
+<hr>
+
+{% if original_text %}
+    <h2><strong>Original Text:<strong></h2>
+        <p>{{ original_text }}</p>
+
+    <h2><strong>Analaysed Text:</strong></h2>
+        <p>{{ Analysed_text }}</p>
+{% endif %}

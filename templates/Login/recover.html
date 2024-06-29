@@ -1,0 +1,27 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'Login/style.css' %}">
+
+<div class="login-container">
+    <div class="login-content">
+        <div class="login-image">
+            <img src={% static "OIP.jpeg" %} alt="user Icon">
+        </div>
+        <div class="login-form">
+            <h2>Recovery</h2>
+            {% if error_message %}
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    {{ error_message }}
+                    </div>
+                {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                <label id="userName">e-Mail</label> <input type="email" name="email" id="">
+                <button type="submit">enter</button>
+            </form>
+            <a href={% url "loginPage" %} class="create-account"><bold>Login Here</bold></a>
+        </div>
+    </div>
+</div>
