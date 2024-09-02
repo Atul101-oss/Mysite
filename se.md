@@ -30,5 +30,4 @@
 - This approach will energize college events, making them more dynamic and enjoyable for everyone.
 
 ---
-
-This script is designed to be simple and to the point, making it easy to understand the core idea and benefits of the project.
+.
