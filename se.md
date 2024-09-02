@@ -1,4 +1,3 @@
-Here's a concise script that captures the essence of the project:
 
 ---
 
